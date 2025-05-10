@@ -12,5 +12,5 @@ let index = potato[int(random(9))];
 }
 
 function draw() {
-image(index, 0, 0, width, height);
+image(potato[index], 0, 0, width, height);
 }
