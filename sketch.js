@@ -30,5 +30,12 @@ image(potato[index], 0, 0);
 }
 
 function mousePressed() {
-index++;
+let newIndex = int(random(0, 8));
+while(1) {
+if(newIndex != index) {break;}
+else {
+newIndex = int(random(0, 8));
+}
+}
+index = newIndex;
 }
