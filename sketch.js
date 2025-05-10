@@ -30,7 +30,7 @@ textSize(50);
 function draw() {
 background(0, 10, 150);
 fill(255, 255, 255);
-rect(50, 100, windowWidth, windowHeight-100);
+rect(50, 100, windowWidth-100, windowHeight-100);
 fill(0, 200, 200);
 text("ziemniak", windowWidth/2, 50);
 image(potato[index], 50, 100);
