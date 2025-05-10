@@ -17,18 +17,23 @@ createCanvas(windowWidth, windowHeight);
 background(255, 255, 255);
 let topHeight = 0;
 for(let i = 0; i < 9; i++) {
-potato[i].resize(windowWidth, 0);
+potato[i].resize(windowWidth-100, 0);
 if(potato[i].height > topHeight) {
 topHeight = potato[i].height;
 }
 }
 resizeCanvas(windowWidth, topHeight);
+textAlign(CENTER);
+textSize(50);
 }
 
 function draw() {
 background(0, 10, 150);
+fill(255, 255, 255);
 rect(0, 100, windowWidth, windowHeight-100);
-image(potato[index], 0, 100);
+fill(0, 200, 200);
+text("ziemniak", windowWidth/2, 50);
+image(potato[index], 50, 100);
 }
 
 function mousePressed() {
