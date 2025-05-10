@@ -14,19 +14,28 @@ potato[8] = loadImage('potato8.jpg');
 
 function setup() {
 createCanvas(windowWidth, windowHeight);
-background(255, 0, 0);
+background(255, 255, 255);
+let topHeight = 0;
 for(let i = 0; i < 9; i++) {
 potato[i].resize(windowWidth, 0);
+if(potato[i].height > topHeight) {
+topHeight = potato[i].height;
 }
+}
+resizeCanvas(windowWidth, topHeight);
 }
 
 function draw() {
-// let newIndex = random(0, 8);
-// while(1) {
-// if(newIndex != index) {break;}
-// else {
-// newIndex = random(0, 8);
-// }
-// }
 image(potato[index], 0, 0);
+}
+
+function mousePressed() {
+let newIndex = random(0, 8);
+while(1) {
+if(newIndex != index) {break;}
+else {
+newIndex = random(0, 8);
+}
+}
+index = newIndex;
 }
