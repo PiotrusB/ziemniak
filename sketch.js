@@ -27,9 +27,7 @@ resizeCanvas(windowWidth, topHeight);
 
 function draw() {
 image(potato[index], 0, 0);
-}
-
-function mousePressed() {
+if(mousePressed) {
 let newIndex = random(0, 8);
 while(1) {
 if(newIndex != index) {break;}
@@ -38,4 +36,5 @@ newIndex = random(0, 8);
 }
 }
 index = newIndex;
+}
 }
