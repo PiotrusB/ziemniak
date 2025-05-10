@@ -17,18 +17,16 @@ potato[i].resize(windowWidth, 0);
 
 function setup() {
 createCanvas(windowWidth, windowHeight);
+background(255, 0, 0);
 }
 
 function draw() {
-if(mousePressed) {
-let newIndex = random(0, 8);
-while(1) {
-if(newIndex != index) {break;}
-else {
-newIndex = random(0, 8);
-}
-}
-while(mousePressed);
-}
+// let newIndex = random(0, 8);
+// while(1) {
+// if(newIndex != index) {break;}
+// else {
+// newIndex = random(0, 8);
+// }
+// }
 image(potato[index], 0, 0);
 }
