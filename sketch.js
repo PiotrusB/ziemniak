@@ -1,17 +1,22 @@
-// let potato = [];
-// function preload() {
-// for(let i = 0; i < 9; i++) {
-// potato[i] = loadImage("potato" + String(i) + ".jpg");
-// }
-// }
+let potato = [];
+function preload() {
+potato[0] = loadImage('potato0.jpg');
+potato[1] = loadImage('potato1.jpg');
+potato[2] = loadImage('potato2.jpg');
+potato[3] = loadImage('potato3.jpg');
+potato[4] = loadImage('potato4.jpg');
+potato[5] = loadImage('potato5.jpg');
+potato[6] = loadImage('potato6.jpg');
+potato[7] = loadImage('potato7.jpg');
+potato[8] = loadImage('potato8.jpg');
+}
 
 function setup() {
 createCanvas(1000, 1000);
-// let index = potato[int(random(9))];
+background(0, 0, 0);
+image(potato[1], 0, 0);
 }
 
 function draw() {
-// image(potato[index], 0, 0);
-  background(255, 0, 0);
-  text("potato", 200, 200);
+
 }
