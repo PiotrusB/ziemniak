@@ -12,7 +12,7 @@ potato[8] = loadImage('potato8.jpg');
 }
 
 function setup() {
-createCanvas(1000, 1000);
+createCanvas(windowWidth, windowHeight);
 background(0, 0, 0);
 image(potato[int(random(0, 8))], 0, 0);
 }
