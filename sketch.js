@@ -26,7 +26,9 @@ resizeCanvas(windowWidth, topHeight);
 }
 
 function draw() {
-image(potato[index], 0, 0);
+background(0, 10, 150);
+rect(0, 100, windowWidth, windowHeight-100);
+image(potato[index], 0, 100);
 }
 
 function mousePressed() {
