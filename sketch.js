@@ -8,9 +8,9 @@ potato[i] = loadImage("ziemniaki/potato" + String(i) + ".jpg");
 function setup() {
 createCanvas(windowWidth, windowHeight);
 background(0);
-image(potato[int(random(9))], 0, 0, width, height);
+let index = potato[int(random(9))];
 }
 
 function draw() {
-
+image(index, 0, 0, width, height);
 }
