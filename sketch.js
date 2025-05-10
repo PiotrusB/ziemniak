@@ -1,7 +1,7 @@
 let potato = [];
 function preload() {
-potato[0] = loadImage('potato0.jpg');
-potato[1] = loadImage('potato1.jpg');
+potato[0] = loadImage('potato0.png');
+potato[1] = loadImage('potato1.png');
 potato[2] = loadImage('potato2.jpg');
 potato[3] = loadImage('potato3.jpg');
 potato[4] = loadImage('potato4.jpg');
