@@ -10,14 +10,14 @@ potato[5] = loadImage('potato5.jpg');
 potato[6] = loadImage('potato6.jpg');
 potato[7] = loadImage('potato7.jpg');
 potato[8] = loadImage('potato8.jpg');
-for(let i = 0; i < 9; i++) {
-potato[i].resize(windowWidth, 0);
-}
 }
 
 function setup() {
 createCanvas(windowWidth, windowHeight);
 background(255, 0, 0);
+for(let i = 0; i < 9; i++) {
+potato[i].resize(windowWidth, 0);
+}
 }
 
 function draw() {
