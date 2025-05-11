@@ -9,7 +9,6 @@ potato[i] = loadImage('ziemniaki/potato' + String(i) + '.jpg');
 
 function setup() {
 createCanvas(windowWidth, windowHeight);
-background(255, 255, 255);
 let topHeight = 0;
 for(let i = 0; i < 10; i++) {
 potato[i].resize(windowWidth-100, 0);
@@ -22,6 +21,7 @@ resizeCanvas(windowWidth, topHeight);
 }
 textAlign(CENTER);
 textSize(50);
+index = int(random(0, 10));
 }
 
 function draw() {
