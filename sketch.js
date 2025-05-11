@@ -32,7 +32,7 @@ image(potato[index], 50, 100);
 }
 
 function mousePressed() {
-if(millis() - lastChange > 700) {
+if(millis() - lastChange > 300) {
 let newIndex = int(random(0, 8));
 while(1) {
 if(newIndex != index) {break;}
