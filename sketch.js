@@ -2,7 +2,7 @@ let potato = [];
 let index = 0;
 let lastChange = 0;
 function preload() {
-for(let i = 0; i < 9; i++) {
+for(let i = 0; i < 10; i++) {
 potato[i] = loadImage('ziemniaki/potato' + String(i) + '.jpg');
 }
 }
@@ -11,7 +11,7 @@ function setup() {
 createCanvas(windowWidth, windowHeight);
 background(255, 255, 255);
 let topHeight = 0;
-for(let i = 0; i < 9; i++) {
+for(let i = 0; i < 10; i++) {
 potato[i].resize(windowWidth-100, 0);
 if(potato[i].height > topHeight) {
 topHeight = potato[i].height;
@@ -33,11 +33,11 @@ image(potato[index], 50, 100);
 
 function mousePressed() {
 if(millis() - lastChange > 400) {
-let newIndex = int(random(0, 9));
+let newIndex = int(random(0, 10));
 while(1) {
 if(newIndex != index) {break;}
 else {
-newIndex = int(random(0, 8));
+newIndex = int(random(0, 10));
 }
 }
 
