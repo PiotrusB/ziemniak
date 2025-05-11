@@ -1,5 +1,5 @@
 let potato = [];
-let index = random(0, 9);
+let index = 0;
 let lastChange = 0;
 function preload() {
 for(let i = 0; i < 9; i++) {
