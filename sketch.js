@@ -3,7 +3,7 @@ let index = 0;
 let lastChange = 0;
 function preload() {
 for(let i = 0; i < 9; i++) {
-potato[i] = loadImage('ziemniaki/potato' + String(i) + '.png');
+potato[i] = loadImage('ziemniaki/potato' + String(i) + '.jpg');
 }
 }
 
