@@ -1,5 +1,6 @@
 let potato = [];
 let index = 0;
+let lastChange = 0;
 function preload() {
 potato[0] = loadImage('potato0.png');
 potato[1] = loadImage('potato1.png');
@@ -22,7 +23,9 @@ if(potato[i].height > topHeight) {
 topHeight = potato[i].height;
 }
 }
+if(topHeight > windowHeight) {
 resizeCanvas(windowWidth, topHeight);
+}
 textAlign(CENTER);
 textSize(50);
 }
@@ -37,6 +40,7 @@ image(potato[index], 50, 100);
 }
 
 function mousePressed() {
+if(millis() - lastChange > 2000) {
 let newIndex = int(random(0, 8));
 while(1) {
 if(newIndex != index) {break;}
@@ -44,7 +48,9 @@ else {
 newIndex = int(random(0, 8));
 }
 }
+}
 index = newIndex;
 let time = millis();
 while(millis() - time > 100);
+lastChange = millis();
 }
