@@ -1,5 +1,5 @@
 let potato = [];
-let index = 0;
+let index = random(0, 9);
 let lastChange = 0;
 function preload() {
 for(let i = 0; i < 9; i++) {
@@ -33,7 +33,7 @@ image(potato[index], 50, 100);
 
 function mousePressed() {
 if(millis() - lastChange > 400) {
-let newIndex = int(random(0, 8));
+let newIndex = int(random(0, 9));
 while(1) {
 if(newIndex != index) {break;}
 else {
