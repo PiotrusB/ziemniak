@@ -48,9 +48,8 @@ else {
 newIndex = int(random(0, 8));
 }
 }
-}
+
 index = newIndex;
-let time = millis();
-while(millis() - time > 100);
+}
 lastChange = millis();
 }
